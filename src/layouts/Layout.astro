@@ -64,9 +64,9 @@ const { description, title } = Astro.props
     }
   }
 
-  @keyframes slideRight {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-400%); } /* Desplaza la mitad del contenedor para empezar de nuevo */
+  @-webkit-keyframes slideRight {
+  0% { -webkit-transform: translateX(0%); }
+  100% { -webkit-transform: translateX(calc(-100% - 100px)); }
 }
 
 .app-icons-container {
