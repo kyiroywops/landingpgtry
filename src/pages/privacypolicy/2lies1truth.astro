@@ -1,0 +1,104 @@
+---
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
+---
+
+<Header title="Privacy Policy" />
+
+<main style="max-width: 1120px; margin: auto; padding: 1rem; display: grid; gap: 1rem; padding-bottom: 2rem;">
+  <h1 style="font-size: 1.875rem; font-weight: bold; margin-bottom: 2rem;">Privacy Policy</h1>
+  
+  <p style="font-size: 1rem; line-height: 1.5;">
+    At TryAgain, we highly prioritize the privacy and security of our users. This Privacy Policy outlines how we collect, use, and safeguard the information you provide when using our application, 2 Lies 1 Truth.
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">1. Information We Collect</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    We collect the following information to provide and improve our service:
+    <ul style="margin-top: 0.5rem;">
+      <li>Usage Data: Information about how you use the app, including interactions, room creation, and gameplay statistics.</li>
+      <li>Room Data: Information related to game rooms you create or join, stored temporarily in Firebase Realtime Database.</li>
+      <li>Player Responses: Truths and lies provided during gameplay, which are shared with other players in the room.</li>
+      <li>Custom Questions: Questions and content created by users in the custom zone of the app.</li>
+      <li>Device Information: Basic information about your device to optimize the application for all supported platforms.</li>
+    </ul>
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">2. How We Use Your Information</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    The information we collect is used to:
+    <ul style="margin-top: 0.5rem;">
+      <li>Provide and maintain the app functionality, including room creation and real-time updates.</li>
+      <li>Present player-provided truths and lies to other players in the game room.</li>
+      <li>Improve the app's user experience across all platforms.</li>
+      <li>Ensure rooms are properly maintained and expired after their designated duration.</li>
+      <li>Analyze usage patterns to enhance app performance and question repository.</li>
+    </ul>
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">3. User-Generated Content</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    2 Lies 1 Truth allows users to provide their own content in the form of truths and lies. The app also includes a custom zone where users can create their own questions:
+    <ul style="margin-top: 0.5rem;">
+      <li>Content provided by users is their responsibility and should comply with our community guidelines.</li>
+      <li>We do not actively monitor or moderate user-generated content in custom zones.</li>
+      <li>User-generated content is stored temporarily and shared only with other players in the same room.</li>
+      <li>We reserve the right to remove any content that violates our terms of service if reported.</li>
+    </ul>
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">4. Question Repository</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    The app includes a repository of pre-defined questions:
+    <ul style="margin-top: 0.5rem;">
+      <li>These questions are designed for entertainment purposes only and are fictional in nature.</li>
+      <li>The repository is regularly updated to enhance the gaming experience.</li>
+      <li>Users should understand that questions from our repository are not meant to be taken literally or as factual statements.</li>
+    </ul>
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">5. Data Security</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    We implement a variety of security measures to maintain the safety of your information. All data is stored securely in Firebase with appropriate access controls and encryption. Room data and player responses are temporary and automatically deleted after the expiration period (typically after game completion).
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">6. Third-Party Services</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    We use third-party services to enhance the functionality of our app, including but not limited to:
+    <ul style="margin-top: 0.5rem;">
+      <li><b>Firebase:</b> Used for real-time database functionality, storing room data temporarily.</li>
+      <li><b>Analytics Tools:</b> Used to understand app usage patterns and improve user experience.</li>
+    </ul>
+    These services may collect information that your device sends whenever you visit our app. This information may include your device's Internet Protocol (IP) address, device type, operating system, the pages of our app that you visit, and other statistics.
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">7. Your Data Protection Rights</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    Depending on your location, you may have the following rights regarding your personal data:
+    <ul style="margin-top: 0.5rem;">
+      <li>The right to access – You have the right to request copies of your personal data.</li>
+      <li>The right to rectification – You have the right to request that we correct any information you believe is inaccurate or incomplete.</li>
+      <li>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</li>
+      <li>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
+      <li>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</li>
+      <li>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
+    </ul>
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">8. Children's Privacy</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    2 Lies 1 Truth is suitable for all ages. While we do not intentionally collect personally identifiable information from children under 13, parents or guardians who believe we might have collected information from a child can contact us to request its deletion.
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">9. Changes to This Privacy Policy</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. We encourage you to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">10. Contact Us</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    If you have any questions or concerns about our privacy practices, please contact us at <a href="mailto:hello@tryagain.app" style="color: blue; text-decoration: none;">hello@tryagain.app</a>.
+  </p>
+</main>
+
+<Footer /> 

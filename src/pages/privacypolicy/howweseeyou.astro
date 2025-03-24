@@ -1,0 +1,119 @@
+---
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
+---
+
+<Header title="Privacy Policy" />
+
+<main style="max-width: 1120px; margin: auto; padding: 1rem; display: grid; gap: 1rem; padding-bottom: 2rem;">
+  <h1 style="font-size: 1.875rem; font-weight: bold; margin-bottom: 2rem;">Privacy Policy</h1>
+  
+  <p style="font-size: 1rem; line-height: 1.5;">
+    At TryAgain, we highly prioritize the privacy and security of our users. This Privacy Policy outlines how we collect, use, and safeguard the information you provide when using our application, How We See You.
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">1. Information We Collect</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    We collect the following information to provide and improve our service:
+    <ul style="margin-top: 0.5rem;">
+      <li>Usage Data: Information about how you use the app, including interactions, room creation, and gameplay statistics.</li>
+      <li>Room Data: Information related to game rooms you create or join, stored temporarily in Firebase Realtime Database.</li>
+      <li>Player Responses: Creative scenarios and stories provided during gameplay, which are shared with other players in the room.</li>
+      <li>Custom Scenarios: Scenarios created by users in the custom zone of the app.</li>
+      <li>Voting Data: Information about which responses players vote for during gameplay.</li>
+      <li>Device Information: Basic information about your device to optimize the application for all supported platforms.</li>
+    </ul>
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">2. How We Use Your Information</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    The information we collect is used to:
+    <ul style="margin-top: 0.5rem;">
+      <li>Provide and maintain the app functionality, including room creation and real-time updates.</li>
+      <li>Present player-provided responses to other players in the game room.</li>
+      <li>Facilitate the voting system to determine the most popular responses.</li>
+      <li>Improve the app's user experience across all platforms.</li>
+      <li>Ensure rooms are properly maintained and expired after their designated duration.</li>
+      <li>Analyze usage patterns to enhance app performance and scenario repository.</li>
+    </ul>
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">3. User-Generated Content</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    How We See You allows users to provide their own content in the form of creative responses to scenarios. The app also includes a custom zone where users can create their own scenarios:
+    <ul style="margin-top: 0.5rem;">
+      <li>Content provided by users is their responsibility and should comply with our community guidelines.</li>
+      <li>We do not actively monitor or moderate user-generated content in custom zones or creative responses.</li>
+      <li>User-generated content may contain mature language or themes depending on the players in a given room.</li>
+      <li>User-generated content is stored temporarily and shared only with other players in the same room.</li>
+      <li>We reserve the right to remove any content that violates our terms of service if reported.</li>
+    </ul>
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">4. Scenario Repository</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    The app includes a repository of pre-defined scenarios:
+    <ul style="margin-top: 0.5rem;">
+      <li>These scenarios are designed for entertainment purposes only.</li>
+      <li>The repository is regularly updated to enhance the gaming experience.</li>
+      <li>Users can also create and share their own custom scenarios.</li>
+      <li>We do not guarantee that all user-created scenarios will be appropriate for all audiences.</li>
+    </ul>
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">5. Content Language and Maturity</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    Due to the creative nature of the game:
+    <ul style="margin-top: 0.5rem;">
+      <li>The language and content in user responses may vary in maturity level.</li>
+      <li>The appropriateness of content depends entirely on the players in each room.</li>
+      <li>We recommend that players establish their own content guidelines within each room.</li>
+      <li>We are not responsible for the nature or appropriateness of user-generated content.</li>
+    </ul>
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">6. Data Security</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    We implement a variety of security measures to maintain the safety of your information. All data is stored securely in Firebase with appropriate access controls and encryption. Room data, scenarios, and player responses are temporary and automatically deleted after the expiration period (typically after game completion).
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">7. Third-Party Services</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    We use third-party services to enhance the functionality of our app, including but not limited to:
+    <ul style="margin-top: 0.5rem;">
+      <li><b>Firebase:</b> Used for real-time database functionality, storing room data temporarily.</li>
+      <li><b>Analytics Tools:</b> Used to understand app usage patterns and improve user experience.</li>
+    </ul>
+    These services may collect information that your device sends whenever you visit our app. This information may include your device's Internet Protocol (IP) address, device type, operating system, the pages of our app that you visit, and other statistics.
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">8. Your Data Protection Rights</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    Depending on your location, you may have the following rights regarding your personal data:
+    <ul style="margin-top: 0.5rem;">
+      <li>The right to access – You have the right to request copies of your personal data.</li>
+      <li>The right to rectification – You have the right to request that we correct any information you believe is inaccurate or incomplete.</li>
+      <li>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</li>
+      <li>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
+      <li>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</li>
+      <li>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
+    </ul>
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">9. Children's Privacy</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    Due to the potential for mature content in user-generated responses, How We See You is recommended for users aged 17 and above. While we do not intentionally collect personally identifiable information from children under 13, parents or guardians who believe we might have collected information from a child can contact us to request its deletion.
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">10. Changes to This Privacy Policy</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. We encourage you to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+  </p>
+
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem;">11. Contact Us</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    If you have any questions or concerns about our privacy practices, please contact us at <a href="mailto:hello@tryagain.app" style="color: blue; text-decoration: none;">hello@tryagain.app</a>.
+  </p>
+</main>
+
+<Footer /> 
