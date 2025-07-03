@@ -63,23 +63,108 @@ import SectionContainer from "@/components/SectionContainer.astro"
         <h2 class="text-3xl font-semibold mb-6 text-black/80">
           Our Apps
         </h2>
-
       </div>
-      <div class="app-icons-container flex overflow-hidden">
-        <img src="/images/app1.png" alt="App 1" class="app-icon mx-4"/>
-        <img src="/images/app2.png" alt="App 2" class="app-icon mx-4"/>
-        <img src="/images/app3.png" alt="App 3" class="app-icon mx-4"/>
-        <img src="/images/app4.png" alt="App 4" class="app-icon mx-4"/>
-        <img src="/images/app5.png" alt="App 5" class="app-icon mx-4"/>
-        <img src="/images/app6.png" alt="App 6" class="app-icon mx-4"/>
-        <img src="/images/app7.png" alt="App 7" class="app-icon mx-4"/>
-        <img src="/images/app8.png" alt="App 8" class="app-icon mx-4"/>
-        <img src="/images/app9.png" alt="App 9" class="app-icon mx-4"/>
- 
-        
-        <!-- Añade más íconos según sea necesario -->
+            <!-- Carrusel simple y funcional -->
+      <div class="relative max-w-6xl mx-auto">
+        <div class="carousel-container relative overflow-hidden p-4">
+          <!-- Wrapper de las apps -->
+          <div class="carousel-wrapper">
+            <!-- Primera serie -->
+            <img src="/images/app18.png" alt="App 2" class="app-icon"/>
+            <img src="/images/app19.png" alt="App 17" class="app-icon"/>
+            <img src="/images/app17.png" alt="App 1" class="app-icon"/>
+            <img src="/images/app3.png" alt="App 3" class="app-icon"/>
+            <img src="/images/app6.png" alt="App 6" class="app-icon"/>
+            <img src="/images/app5.png" alt="App 5" class="app-icon"/>
+            <img src="/images/app9.png" alt="App 9" class="app-icon"/>
+            <img src="/images/app12.png" alt="App 10" class="app-icon"/>
+            <img src="/images/app13.png" alt="App 11" class="app-icon"/>
+            <!-- Segunda serie idéntica para flujo continuo -->
+            <img src="/images/app18.png" alt="App 2" class="app-icon"/>
+            <img src="/images/app19.png" alt="App 17" class="app-icon"/>
+            <img src="/images/app17.png" alt="App 1" class="app-icon"/>
+            <img src="/images/app3.png" alt="App 3" class="app-icon"/>
+            <img src="/images/app6.png" alt="App 6" class="app-icon"/>
+            <img src="/images/app5.png" alt="App 5" class="app-icon"/>
+            <img src="/images/app9.png" alt="App 9" class="app-icon"/>
+            <img src="/images/app12.png" alt="App 10" class="app-icon"/>
+            <img src="/images/app13.png" alt="App 11" class="app-icon"/>
+          </div>
+        </div>
       </div>
       
+      <!-- Estilos CSS simples -->
+      <style>
+        .app-icon {
+          width: 120px;
+          height: 120px;
+          border-radius: 28px;
+          object-fit: cover;
+          object-position: center;
+          transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          cursor: pointer;
+          display: block;
+          flex-shrink: 0;
+        }
+        
+        .app-icon:hover {
+          transform: scale(1.15);
+          z-index: 10;
+          position: relative;
+        }
+        
+        .carousel-container {
+          overflow: hidden;
+          position: relative;
+        }
+        
+        .carousel-wrapper {
+          display: flex;
+          gap: 1rem;
+          width: max-content;
+          animation: scroll-infinite 100s linear infinite;
+        }
+        
+        .carousel-container:hover .carousel-wrapper {
+          animation-play-state: paused;
+        }
+        
+        @keyframes scroll-infinite {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-50%);
+          }
+        }
+        
+        @media (max-width: 1024px) {
+          .app-icon {
+            width: 100px;
+            height: 100px;
+          }
+          
+          .carousel-wrapper {
+            gap: 0.75rem;
+          }
+        }
+        
+        @media (max-width: 768px) {
+          .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+          }
+          
+          .carousel-wrapper {
+            gap: 0.5rem;
+          }
+          
+          .app-icon:hover {
+            transform: scale(1.1);
+          }
+        }
+      </style>
     </SectionContainer>
   </main>
 </Layout>
